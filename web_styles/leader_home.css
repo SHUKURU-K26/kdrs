@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+header .header{
+    display: flex;
+    background-color: hsl(216, 60%, 14%);
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+
+}
+header h2{
+    animation: fadeIn 1s ease;
+}
+
+.header-logo {
+    height: 100px;
+    border-radius: 20px;
+    width: 100px;
+}
+.sections{
+    display: flex;
+    height: auto;
+    width: 100%;
+    transform: scale(0.9);
+    margin: 0px 50px;
+    animation: fadeIn 1s ease;
+}
+.sections .menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 30%;
+    height: auto;
+    padding: 80px 0px;
+    border: 1.3px ridge hsl(216, 85%, 27%);
+    border-radius: 10px
+}
+ul{
+ font-family: monospace;
+ list-style: none;
+}
+ul li{
+    display: block;
+    padding: 30px;
+}
+ul li a{
+    color: hsl(216, 85%, 27%);
+    text-decoration: none;
+    font-size:1.3em;   
+    transition:all 0.8s ease-in-out;
+}
+ul li ul.dropdown li{
+     display: none;
+}
+ul li a:hover{
+    background-color:hsl(216, 85%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+ul li:hover ul.dropdown li{
+    display: block;
+    padding: -10px;
+}
+.pair1, .pair2{
+    display: column;
+
+}
+
+ul li button{
+    background-color: hsl(216, 85%, 27%);
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+}
+@keyframes fadeIn {
+    from{
+        
+        transform: translateY(-10px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+.pairs-of-account-info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.pairs-of-account-info .user-names-alphabet-letters{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: hsl(216, 60%, 14%);
+}
+.pairs-of-account-info #automatic-paragraph{
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: hsl(216, 60%, 14%);
+    padding: 10px;
+    margin-left: 40%;
+    border-radius: 5px;
+}
+
+.sections .section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    margin-left: 80px;
+    border: 2px ridge hsl(216, 85%, 27%);
+    border-radius: 3px;
+    width: 100%; 
+}
+.section-two #dashboard-paragraph{
+    color: gray;
+    font-size: 10mm;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section-two .bars{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.bars .green-bar,.yellow-bar,.red-bar{
+    width: 90px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green-bar{background-color: green;}
+.yellow-bar{background-color: yellow;}
+.red-bar{background-color: red;}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(216, 60%, 14%);
+    color: white;
+    position: relative;
+}
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

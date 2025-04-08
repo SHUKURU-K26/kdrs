@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #BFD8D5;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+  
+    
+}
+header .header{
+    display: flex;
+    background-color: hsl(216, 60%, 14%);
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+
+}
+header h2{
+    animation: fadeIn 1s ease;
+}
+
+.header-logo {
+    height: 100px;
+    border-radius: 20px;
+    width: 100px;
+}
+.sections{
+    display: flex;
+    height: auto;
+    width: 100%;
+    transform: scale(0.9);
+    margin: 0px 50px;
+    animation: fadeIn 1s ease;
+}
+.sections .menu-section{
+    background-color: hsl(216, 88%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 30%;
+    height: auto;
+    padding: 80px 0px;
+    border-radius: 10px;
+
+}
+ul{
+ font-family: monospace;
+ list-style: none;
+}
+ul li{
+    display: block;
+    padding: 30px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:1.3em;   
+    transition:all 0.8s ease-in-out;
+}
+ul li ul.dropdown li{
+     display: none;
+}
+ul li a:hover{
+    background-color:white;
+    color: hsl(240, 100%, 54%);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+ul li:hover ul.dropdown li{
+    display: block;
+    padding: -10px;
+}
+ul li button{
+    background-color: aqua;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.delete-sector-form{
+    background-color: hsl(0, 0%, 100%);
+    opacity: 1;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+.delete-sector-form p{
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+
+}
+.delete-sector-form .proceed-buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.delete-sector-form #cancel{
+    padding: 10px 20px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    background-color: rgb(184, 184, 184);
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.delete-sector-form #delete{
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+    width:100px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+}
+.sections .containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(133, 196, 255);
+    margin-left: 80px;
+    border-radius: 10px;
+    width: 100%;
+}
+@keyframes fadeIn {
+    from{
+        transform: translateY(-10px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+#automatic-paragraph{
+    background: linear-gradient(rgb(0, 93, 109), rgb(5, 6, 53));
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    font-size:25px;
+    font-weight: bold;
+    text-align:center;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(216, 60%, 14%);
+    color: white;
+    position: relative;
+}
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+#success-message{
+    background: linear-gradient(green, black);
+    background-clip: text;
+    color: transparent;
+    font-size:20px;
+    text-align:center;
+    font-weight: bold;
+}

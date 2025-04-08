@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #BFD8D5;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(216, 60%, 14%);
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.header-logo {
+    height: 100px;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.login-container {
+    margin-top: 60px;
+    background: #0F1C3F;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 450px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+input:focus {
+    transform: scale(1.05);
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #0F1C3F;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.buttons button{
+    width: 150px;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.buttons #login-button{
+    background-color: hsl(125, 71%, 50%);
+    color: white;
+}
+button:hover {
+    background-color: #FFC107;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(216, 60%, 14%);
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-top: 27px;
+    
+}
+footer .footer-arm-of-court{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

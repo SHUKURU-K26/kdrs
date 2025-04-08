@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: url('../web_images/kicukiro_office.jpg') no-repeat center center/cover;
+    
+}
+@keyframes smoothAnimation{
+    50%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(216, 60%, 14%);
+    padding: 5px;
+    color: white;
+}
+
+.top-left, .top-right {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;  
+}
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 70px 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 50px auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    text-shadow: 1px 1px 3px black, -1px -1px 1px black;
+    animation: smoothAnimation 1s ease-in-out;
+}
+p{
+    color: gray;
+    animation: smoothAnimation 1s ease-in-out;
+    font-weight: bold;
+}
+
+.fields{
+    animation: smoothAnimation 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.for-phone-input, .for-password-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    max-width: 450px;
+}
+.telcode-input,.password-input{
+   display: flex;
+   width: 300px;
+   margin-left: -30px;
+   justify-content: space-evenly;
+}
+
+ .box-250,.eye{
+   background-color: grey;
+   width: 60px;
+   padding: 10px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.telcode-input input, .password-input input{
+    border: 1px solid hsl(216, 60%, 14%);
+    outline: none;
+    width: 200px;
+    border-radius: 5px;
+}
+.div-btn{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in;
+    opacity: 0.8;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(216, 60%, 14%);
+    color: white;
+    position: relative;
+    width: 100%;
+}
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

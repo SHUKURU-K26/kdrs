@@ -1,0 +1,160 @@
+header .header{
+    background-color: darkslategrey;
+}
+.sections .section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 60%, 14%);
+    margin-left: 80px;
+    border: 2px ridge hsl(0, 0%, 100%);
+    border-radius: 6px;
+    width: 100%; 
+}
+.section-two #dashboard-paragraph{
+    color: rgb(255, 255, 255);
+    font-size: 10mm;
+    text-align: center;
+    font-weight: bold; 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sections .menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: hsl(216, 60%, 14%);;
+    width: 30%;
+    height: auto;
+    padding: 80px 0px;
+    border: 1.3px ridge hsl(216, 85%, 27%);
+    border-radius: 10px
+}
+ul{
+ font-family: monospace;
+ list-style: none;
+}
+ul li{
+    display: block;
+    padding: 30px;
+}
+ul li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size:1.3em;   
+    transition:all 0.8s ease-in-out;
+}
+ul li ul.dropdown li{
+     display: none;
+}
+ul li a:hover{
+    background-color: rgb(117, 255, 255);
+    color: hsl(216, 60%, 14%);;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+ul li:hover ul.dropdown li{
+    display: block;
+    padding: -10px;
+}
+ul li button{
+    background-color: rgb(117, 255, 255);
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    width: 100%;
+    border-radius: 5px;
+}
+.new-leader-form{
+    background-color: hsla(214, 26%, 95%, 0.952);
+    width: 400px;
+    height: 700px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.new-leader-form p{
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.new-leader-form #save{
+    padding: 15px;
+    background-color: rgb(11, 3, 85);
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.new-leader-form #save:hover{
+    opacity: 0.8;
+}
+
+.new-leader-form .input-pairs{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.inputs{
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid ridge;
+    margin-top: 10px;
+    font-size: 15px;
+}
+#lock{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    font-size: 25px;
+    text-align: center;
+    justify-content:center;
+    
+    font-size: 20px;
+    border:1px solid black;
+    cursor:pointer;
+}
+#phone{
+    width: 30px;
+    font-size: 15px;
+}
+select{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid ridge;
+}
+.sections .section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+    border-radius: 10px;
+    border: 2px ridge hsl(216, 85%, 27%);
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: darkslategrey;
+    color: white;
+    position: relative;
+}
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
